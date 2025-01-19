@@ -1,0 +1,73 @@
+@keyframes changeLetter {
+    0% {
+      content: "T";
+    }
+    10% {   color: white;
+        content: "o";
+    }
+    15% {  
+      content: "m";
+    }
+    
+    20% {
+        content: "a";
+        }
+        25% {
+        content: "s";
+        }
+        30% {
+        content: "L";
+        }
+    
+        35% {
+        content: "ö";
+        }
+        40% {
+            content: "n";
+            }
+        
+            45% {
+            content: "n";
+            }
+            50% {
+                content: "b";
+                }
+            
+                55% {
+                content: "l";
+                }
+                60% {
+                    content: "a";
+                    }
+                
+                    65% {
+                    content: "d";
+                    }
+
+
+
+
+
+  }
+  
+  .element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    &:after {
+      animation: changeLetter 10s linear infinite alternate;
+      display: block;
+      content: "T";
+      font-size: 80px;
+    }
+  }
+  
+  
+  body {
+    font-family: Georgia, serif;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
